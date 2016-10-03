@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{% if message %}
+	<div class="alert alert-danger">{{message}}</div>
+{% endif %}
+
+<div class="col-xs-20 col-xs-offset-1">
+	<form class="form-horizontal" method="post" action="/register_submit">
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+			<div class="col-sm-6">
+				<input type="text" name="real_name" class="form-control" id="inputEmail3" placeholder="Your Name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+			<div class="col-sm-6">
+				<input type="text" name="username" class="form-control" id="inputEmail3" placeholder="username">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+			<div class="col-sm-6">
+				<input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+			<div class="col-sm-6">
+				<input type="password" name="password2" class="form-control" id="inputPassword3" placeholder="Password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+			<div class="col-sm-6">
+				<input type="text" name="email" class="form-control" id="inputEmail3" placeholder="email">
+			</div>
+		</div>
+<!-- 		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">Profile Pic</label>
+			<div class="col-sm-6">
+				<input type="file" name="avatar" class="form-control" id="inputEmail3" placeholder="avatar">
+			</div>
+		</div> -->
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-6">
+				<button type="submit" class="btn btn-default btn-success">Register</button>
+			</div>
+		</div>
+	</form>
+</div>
+{% endblock %}

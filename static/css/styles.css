@@ -1,0 +1,9 @@
+/* line 23, ../../compass/sass/styles.sass */
+body {
+  background-color: #1d96d7;
+}
+/* line 25, ../../compass/sass/styles.sass */
+body .welcome-text {
+  padding: 15px;
+  text-align: left;
+}
